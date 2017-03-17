@@ -18,9 +18,9 @@ namespace MatrixBackground
         public Character(Vector2 _Position)
         {
             mPosition = _Position;
-            lifeTime = maxLife = 3.0;
-            startTime = maxStart = 0.125;
-            mCharacter = Engine.Settings.RandomZeroOne;
+            lifeTime = maxLife = Engine.Settings.LIFE_TIME_CHAR;
+            startTime = maxStart = Engine.Settings.INIT_TIME_CHAR;
+            mCharacter = Engine.Settings.RandomChar;
         }
 
         public void Update(double _Delta)
